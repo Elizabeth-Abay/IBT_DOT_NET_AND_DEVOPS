@@ -1,0 +1,15 @@
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_01\bin\Debug\net8.0\CardTopUp.exe
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_01\bin\Debug\net8.0\CardTopUp.deps.json
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_01\bin\Debug\net8.0\CardTopUp.runtimeconfig.json
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_01\bin\Debug\net8.0\CardTopUp.dll
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_01\bin\Debug\net8.0\CardTopUp.pdb
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_01\obj\Debug\net8.0\CardTopUp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_01\obj\Debug\net8.0\CardTopUp.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_01\obj\Debug\net8.0\CardTopUp.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_01\obj\Debug\net8.0\CardTopUp.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_01\obj\Debug\net8.0\CardTopUp.sourcelink.json
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_01\obj\Debug\net8.0\CardTopUp.dll
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_01\obj\Debug\net8.0\refint\CardTopUp.dll
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_01\obj\Debug\net8.0\CardTopUp.pdb
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_01\obj\Debug\net8.0\CardTopUp.genruntimeconfig.cache
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_01\obj\Debug\net8.0\ref\CardTopUp.dll
