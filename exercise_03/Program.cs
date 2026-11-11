@@ -1,11 +1,32 @@
+using  AddisEats.Api.Services.Restaurant;
+using  AddisEats.Api.Services.MenuItems;
+
 var builder = WebApplication.CreateBuilder(args);
 
+
+
 // this is used for service registry and building ur app
+
+// in the service u add the controller
+builder.Services.AddControllers();
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// in the dependency injection the controller receives an object of this interface
+// register this interface as this service
+builder.Services.AddScoped< RestaurantServiceInterface , RestaurantService >();
+builder.Services.AddScoped< MenuItemsServiceInterface , MenuItemService>();
+
+
+
+
+// service registration before build using Add
+// middleware - after build using use
+
+
 
 var app = builder.Build();
 
@@ -18,29 +39,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
+app.UseMapControllers();
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
