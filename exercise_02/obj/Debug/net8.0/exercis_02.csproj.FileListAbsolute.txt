@@ -1,0 +1,15 @@
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_02\obj\Debug\net8.0\exercis_02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_02\obj\Debug\net8.0\exercis_02.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_02\obj\Debug\net8.0\exercis_02.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_02\obj\Debug\net8.0\exercis_02.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_02\obj\Debug\net8.0\exercis_02.sourcelink.json
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_02\bin\Debug\net8.0\exercis_02.exe
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_02\bin\Debug\net8.0\exercis_02.deps.json
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_02\bin\Debug\net8.0\exercis_02.runtimeconfig.json
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_02\bin\Debug\net8.0\exercis_02.dll
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_02\bin\Debug\net8.0\exercis_02.pdb
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_02\obj\Debug\net8.0\exercis_02.dll
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_02\obj\Debug\net8.0\refint\exercis_02.dll
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_02\obj\Debug\net8.0\exercis_02.pdb
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_02\obj\Debug\net8.0\exercis_02.genruntimeconfig.cache
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\exercise_02\obj\Debug\net8.0\ref\exercis_02.dll
