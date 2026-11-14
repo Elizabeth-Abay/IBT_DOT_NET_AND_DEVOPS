@@ -25,4 +25,206 @@ public class SeedData
         new Restaurant { Id = 12, Name = "Bunna Restaurant", Address = "Ayat", Phone = "555-6789", IsActive = true, OwnerAddress = "791 Fir St" }
     };
 
+
+
+    public static List<MenuItem> menuItems = new List<MenuItem>
+    {
+        new MenuItem()
+        {
+            Id = 1,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 4
+        },
+        new MenuItem()
+        {
+            Id = 2,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 5
+        },
+        new MenuItem()
+        {
+            Id = 3,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 5
+        },
+        new MenuItem()
+        {
+            Id = 4,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 5
+        },
+        new MenuItem()
+        {
+            Id = 5,
+            Name = "Doro Wetrrre",
+            Category = "Tibss",
+            Price = 2300m,
+            RestaurantId = 1
+        },
+        new MenuItem()
+        {
+            Id = 6,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 1
+        },
+        new MenuItem()
+        {
+            Id = 7,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 2
+        },
+        new MenuItem()
+        {
+            Id = 8,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 2
+        },
+        new MenuItem()
+        {
+            Id = 9,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 3
+        },
+        new MenuItem()
+        {
+            Id = 10,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 6
+        },
+        new MenuItem()
+        {
+            Id = 11,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 7
+        },
+        new MenuItem()
+        {
+            Id = 12,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 7
+        },
+        new MenuItem()
+        {
+            Id = 13,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 8
+        },
+        new MenuItem()
+        {
+            Id = 14,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 9
+        },
+        new MenuItem()
+        {
+            Id = 15,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 9
+        },
+        new MenuItem()
+        {
+            Id = 16,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 10
+        },
+        new MenuItem()
+        {
+            Id = 17,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 10
+        },
+        new MenuItem()
+        {
+            Id = 18,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 11
+        },
+        new MenuItem()
+        {
+            Id = 19,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 11
+        },
+        new MenuItem()
+        {
+            Id = 20,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 12
+        },
+        new MenuItem()
+        {
+            Id = 21,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 12
+        },
+        new MenuItem()
+        {
+            Id = 22,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 3
+        },
+         new MenuItem()
+        {
+            Id = 23,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 2
+        },
+         new MenuItem()
+           {
+            Id = 24,
+            Name = "Doro Wot",
+            Category = "Wot",
+            Price = 1200m,
+            RestaurantId = 1
+        },
+
+    };
+
+
+    public static List<Order> orders = new List<Order> { };
+
 }

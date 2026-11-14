@@ -9,12 +9,12 @@ namespace AddisEats.Api.Services.Restaurant;
 public interface RestaurantServiceInterface
 {
 
-    public AddisEats.Api.Model.Restaurant? GetById(int Id);
+    public RestaurantDTO GetById(int Id);
 
     
     // pass default values when it is called
-    public List<AddisEats.Api.Model.Restaurant> GetAll(string? SearchArea , bool IsActive , int page , int pageSize);
+    public List<RestaurantDTO> GetAll(string? SearchArea , bool IsActive , int page , int pageSize);
 
 
-    //public List<MenuItem> GetMenuForRestaurant(int RestaurantId);
+    public List<MenuItem> GetMenuForRestaurant(int RestaurantId);
 }

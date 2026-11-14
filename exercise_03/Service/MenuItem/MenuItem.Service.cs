@@ -1,47 +1,12 @@
 using AddisEats.Api.Model;
 
+using AddisEats.Api.Data;
+
 namespace AddisEats.Api.Services.MenuItems;
 
 public class MenuItemService : MenuItemsServiceInterface
 {
-    private List<MenuItem> _menuItems = new List<MenuItem>
-    {
-        new MenuItem()
-        {
-            Id = 1,
-            Name = "Doro Wot",
-            Category = "Wot",
-            Price = 1200m,
-        },
-        new MenuItem()
-        {
-            Id = 2,
-            Name = "Doro Wot",
-            Category = "Wot",
-            Price = 1200m,
-        },
-        new MenuItem()
-        {
-            Id = 3,
-            Name = "Doro Wot",
-            Category = "Wot",
-            Price = 1200m,
-        },
-        new MenuItem()
-        {
-            Id = 4,
-            Name = "Doro Wot",
-            Category = "Wot",
-            Price = 1200m,
-        },
-        new MenuItem()
-        {
-            Id = 5,
-            Name = "Doro Wetrrre",
-            Category = "Tibss",
-            Price = 2300m
-        }
-    };
+    private static readonly List<MenuItem> _menuItems = SeedData.menuItems;
 
     public List<MenuItem> getAll()
     {

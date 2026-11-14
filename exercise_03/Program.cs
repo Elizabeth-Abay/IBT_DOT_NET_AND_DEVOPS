@@ -1,5 +1,7 @@
 using  AddisEats.Api.Services.Restaurant;
 using  AddisEats.Api.Services.MenuItems;
+using  AddisEats.Api.Service.Order;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +21,7 @@ builder.Services.AddSwaggerGen();
 // register this interface as this service
 builder.Services.AddScoped< RestaurantServiceInterface , RestaurantService >();
 builder.Services.AddScoped< MenuItemsServiceInterface , MenuItemService>();
-
+builder.Services.AddScoped<OrderInterface , OrderService>();
 
 
 
@@ -39,7 +41,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseMapControllers();
+app.MapControllers();
 
 app.Run();
 

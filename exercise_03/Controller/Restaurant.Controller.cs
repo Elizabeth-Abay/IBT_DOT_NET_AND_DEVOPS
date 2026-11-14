@@ -2,12 +2,14 @@
 // annotations
 
 using Microsoft.AspNetCore.Mvc;
-
 using AddisEats.Api.Services.Restaurant; // the namespace for the interface
 
 using  AddisEats.Api.Model;
 
+using  AddisEats.Api.DTOs;
+
 namespace AddisEats.Api.Controller.Restaurant;
+
 
 
 
@@ -18,7 +20,7 @@ public class RestaurantController : ControllerBase
     private readonly RestaurantServiceInterface _myRestaurantService;
     // dependency injection
     // we use the service interface
-    RestaurantController(RestaurantServiceInterface InjectedRestaurantService)
+    public RestaurantController(RestaurantServiceInterface InjectedRestaurantService)
     {
         _myRestaurantService = InjectedRestaurantService;
     }
@@ -45,14 +47,26 @@ public class RestaurantController : ControllerBase
 
 
     [HttpGet]
-    [Route("/{id}")]
+    [Route("{id}")]
     public ActionResult? GetById([FromRoute] int id)
     {
-        AddisEats.Api.Model.Restaurant? rest = _myRestaurantService.GetById(id);
+        RestaurantDTO? rest = _myRestaurantService.GetById(id);
 
         if (rest == null) return NotFound();
 
         return Ok(rest);
+    }
+
+
+    [HttpGet]
+    [Route("{id}/menu")]
+    public ActionResult GetMenuRestaurant([FromRoute] int id)
+    {
+        List<MenuItem> result = _myRestaurantService.GetMenuForRestaurant(id);
+
+        if (result == null) return NotFound();
+
+        return Ok(result);
     }
 
 }

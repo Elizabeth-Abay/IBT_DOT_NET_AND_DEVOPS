@@ -9,18 +9,18 @@ using AddisEats.Api.Model;
 namespace AddisEats.Api.Controller;
 
 
+// we dont have to manually check model state binding and validation err bc of [ApiController]
 // controllers implement the interface ControllerBase
 [ApiController] // it is a controller
-// we dont have to manually check model state binding and validation err bc of [ApiController]
 [Route("api/v1/menu")] // this controller is called for this route
 public class MenuItemsController : ControllerBase
 {
-    private readonly MenuItemService _menuItemService;
+    private readonly MenuItemsServiceInterface _menuItemService;
 
-    MenuItemsController(MenuItemService _menuItemService)
+    public MenuItemsController(MenuItemsServiceInterface menuItemService)
     {
         // dependency injection for the items
-        this._menuItemService = _menuItemService;
+           _menuItemService = menuItemService;
     }
 
     // in the controller get , post , put , delete
@@ -28,20 +28,17 @@ public class MenuItemsController : ControllerBase
 
 
     [HttpGet]
-    // if u put [HttpGet("active")] - parent + active
-    // if u put [HttpGet("/active")] - parent dropped only /active
-    List<MenuItem> getAll()
+    public List<MenuItem> getAll()
     {
         return _menuItemService.getAll();
     }
 
 
     [HttpGet]
-    [Route("/{id}")]
-    // this Id is received from the path parameter
-    MenuItem getOne([FromRoute]  int Id)
+    [Route("{id}")]
+    public MenuItem getOne([FromRoute]  int Id)
     {
-        return _menuItemService.getOne(Id);
+           return _menuItemService.getOne(Id);
     }
 
 }
