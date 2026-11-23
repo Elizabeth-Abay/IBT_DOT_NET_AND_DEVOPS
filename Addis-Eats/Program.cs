@@ -1,6 +1,8 @@
 using  AddisEats.Api.Services.Restaurant;
 using  AddisEats.Api.Services.MenuItems;
 using  AddisEats.Api.Service.Order;
+using AddisEats.Api.Services;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +24,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped< RestaurantServiceInterface , RestaurantService >();
 builder.Services.AddScoped< MenuItemsServiceInterface , MenuItemService>();
 builder.Services.AddScoped<OrderInterface , OrderService>();
+builder.Services.AddSingleton<IClock, SystemClock>();
 
 
 

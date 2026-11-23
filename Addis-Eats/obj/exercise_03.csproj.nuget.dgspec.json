@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\OneDrive\\Desktop\\IBT_DOTNET\\exercise_03\\exercise_03.csproj": {}
+    "C:\\Users\\HP\\OneDrive\\Desktop\\IBT_DOTNET\\Addis-Eats\\exercise_03.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\OneDrive\\Desktop\\IBT_DOTNET\\exercise_03\\exercise_03.csproj": {
+    "C:\\Users\\HP\\OneDrive\\Desktop\\IBT_DOTNET\\Addis-Eats\\exercise_03.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Desktop\\IBT_DOTNET\\exercise_03\\exercise_03.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Desktop\\IBT_DOTNET\\Addis-Eats\\exercise_03.csproj",
         "projectName": "exercise_03",
-        "projectPath": "C:\\Users\\HP\\OneDrive\\Desktop\\IBT_DOTNET\\exercise_03\\exercise_03.csproj",
+        "projectPath": "C:\\Users\\HP\\OneDrive\\Desktop\\IBT_DOTNET\\Addis-Eats\\exercise_03.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\OneDrive\\Desktop\\IBT_DOTNET\\exercise_03\\obj\\",
+        "outputPath": "C:\\Users\\HP\\OneDrive\\Desktop\\IBT_DOTNET\\Addis-Eats\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
