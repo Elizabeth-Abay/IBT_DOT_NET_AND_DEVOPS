@@ -1,6 +1,5 @@
 using System.Diagnostics;
-using System.Text.Json;
-using AddisEats.Api.Common;
+using Microsoft.AspNetCore.Mvc;
 
 namespace AddisEats.Api.Middleware;
 
@@ -24,21 +23,22 @@ public sealed class ExceptionHandlingMiddleware
         catch (Exception ex)
         {
             var traceId = Activity.Current?.Id ?? context.TraceIdentifier;
-            _logger.LogError(ex, "Unhandled exception. TraceId: {TraceId}", traceId);
-
-            var error = ErrorCatalogue.UnexpectedFailure(traceId);
+            _logger.LogError(ex, "Unhandled exception caught by middleware. TraceId: {TraceId}", traceId);
 
             context.Response.StatusCode = StatusCodes.Status500InternalServerError;
-            context.Response.ContentType = "application/json";
+            context.Response.ContentType = "application/problem+json";
 
-            var payload = JsonSerializer.Serialize(new
+            var problem = new ProblemDetails
             {
-                code = error.Code,
-                message = error.Message,
-                traceId
-            });
+                Status = StatusCodes.Status500InternalServerError,
+                Title = "Internal Server Error",
+                Detail = "An unexpected error occurred while processing your request.",
+                Instance = context.Request.Path
+            };
+            problem.Extensions["code"] = "SERVER.UNEXPECTED_ERROR";
+            problem.Extensions["traceId"] = traceId;
 
-            await context.Response.WriteAsync(payload);
+            await context.Response.WriteAsJsonAsync(problem);
         }
     }
 }

@@ -12,7 +12,27 @@ var builder = WebApplication.CreateBuilder(args);
 // this is used for service registry and building ur app
 
 // in the service u add the controller
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .ConfigureApiBehaviorOptions(options =>
+    {
+        options.InvalidModelStateResponseFactory = context =>
+        {
+            var traceId = System.Diagnostics.Activity.Current?.Id ?? context.HttpContext.TraceIdentifier;
+            var problem = new ValidationProblemDetails(context.ModelState)
+            {
+                Status = StatusCodes.Status400BadRequest,
+                Title = "One or more validation errors occurred.",
+                Instance = context.HttpContext.Request.Path
+            };
+            problem.Extensions["code"] = "VALIDATION.FAILED";
+            problem.Extensions["traceId"] = traceId;
+
+            return new BadRequestObjectResult(problem)
+            {
+                ContentTypes = { "application/problem+json" }
+            };
+        };
+    }); ;
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
