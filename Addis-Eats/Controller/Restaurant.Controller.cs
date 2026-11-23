@@ -47,7 +47,7 @@ public class RestaurantController : ControllerBase
 
 
     [HttpGet]
-    [Route("{id}")]
+    [Route("{id:int}")]
     public ActionResult? GetById([FromRoute] int id)
     {
         RestaurantDTO? rest = _myRestaurantService.GetById(id);
