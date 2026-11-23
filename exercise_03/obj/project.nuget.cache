@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FGHW6p/bYu3b+UfSv0ZC6YeCyr5AePVWU02kQPsq9bFMRfW/r24PC1F12G/9vk8NbOUYwWZ0JOi8hEG7F9bHyQ==",
+  "dgSpecHash": "JCBV24CgJudZqVZEHIy4l7YXbKDFMFV1n9vftDNGNPcXqaW0pGU8qCUy0jCovoZQkHEHTng7y6lJ1IipJmnCBw==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\OneDrive\\Desktop\\IBT_DOTNET\\exercise_03\\exercise_03.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
