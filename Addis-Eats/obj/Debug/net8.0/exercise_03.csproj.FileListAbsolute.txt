@@ -64,3 +64,11 @@ C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\Addis-Eats\obj\Debug\net8.0\refint\exerc
 C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\Addis-Eats\obj\Debug\net8.0\exercise_03.pdb
 C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\Addis-Eats\obj\Debug\net8.0\exercise_03.genruntimeconfig.cache
 C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\Addis-Eats\obj\Debug\net8.0\ref\exercise_03.dll
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\Addis-Eats\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\Addis-Eats\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\Addis-Eats\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\Addis-Eats\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\Addis-Eats\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\Addis-Eats\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\Addis-Eats\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\HP\OneDrive\Desktop\IBT_DOTNET\Addis-Eats\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

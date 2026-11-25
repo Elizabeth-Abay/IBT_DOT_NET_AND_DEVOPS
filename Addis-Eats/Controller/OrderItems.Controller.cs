@@ -31,10 +31,20 @@ public class OrderController : ControllerBase
 
         if (!result.IsSuccess)
         {
-            return StatusCode(result.Error.StatusCode, new
+            var error = result.Error;
+            if (error is null)
             {
-                code = result.Error.Code,
-                message = result.Error.Message
+                return StatusCode(StatusCodes.Status500InternalServerError, new
+                {
+                    code = "SERVER.UNEXPECTED_ERROR",
+                    message = "An unexpected error occurred."
+                });
+            }
+
+            return StatusCode(400, new
+            {
+                code = 400,
+                message = "Whoops !"
             });
         }
 

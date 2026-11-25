@@ -5,6 +5,6 @@ namespace AddisEats.Api.Service.Order;
 
 public interface OrderInterface
 {
-    Result<Model.Order> Place(CreateOrderRequest request);
-    List<Model.Order> GetOrders(int customerId);
+    public Result<AddisEats.Api.Model.Order> Place(AddisEats.Api.Model.CreateOrderRequest request);
+    public List<AddisEats.Api.Model.Order> GetOrders(int customerId);
 }

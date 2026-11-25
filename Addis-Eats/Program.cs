@@ -2,6 +2,21 @@ using  AddisEats.Api.Services.Restaurant;
 using  AddisEats.Api.Services.MenuItems;
 using  AddisEats.Api.Service.Order;
 using AddisEats.Api.Services;
+using System.Diagnostics;
+using System.Text.Json;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+//using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.Extensions.Primitives;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
+using Execise.Middleware;
 
 
 
@@ -61,7 +76,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseMiddleware<ExceptionHandlingMiddleware>(); 
+app.UseMiddleware<GlobalExceptionMiddleware>();
+
+app.UseMiddleware<CorrelationIdMiddleware>();
+
+app.UseMiddleware<RequestTimingMiddleware>();
+
+app.UseMiddleware<ApiKeyMiddleware>();
+
+
 
 app.UseHttpsRedirection();
 

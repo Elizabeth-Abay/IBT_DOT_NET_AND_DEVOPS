@@ -225,6 +225,7 @@ public class SeedData
     };
 
 
-    public static List<Order> orders = new List<Order> { };
+    public static List<Order> orders = new List<Order> {
+    };
 
 }
